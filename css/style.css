@@ -3,7 +3,7 @@
    Single stylesheet for the entire site.
    ============================================================ */
 
-/* 
+
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -20,6 +20,51 @@
 html { scroll-behavior: smooth; }
 body { background: var(--white); color: var(--black); font-family: var(--font-body); font-weight: 300; cursor: none; overflow-x: hidden; }
 
+#cursor,
+#cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+}
+
+#cursor {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(184, 151, 90, 0.75);
+}
+
+#cursor-ring {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(184, 151, 90, 0.9);
+  border-radius: 50%;
+  transition: width .18s ease, height .18s ease, border-color .18s ease, opacity .18s ease;
+}
+
+@media (pointer: coarse) {
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  .carousel-btn,
+  .carousel-dot,
+  .testi-dot,
+  .submit-btn {
+    cursor: auto;
+  }
+
+  #cursor,
+  #cursor-ring {
+    display: none;
+  }
+}
 
 /* ── NAV ── */
 nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 2rem 4rem; transition: background .4s, padding .4s; }
