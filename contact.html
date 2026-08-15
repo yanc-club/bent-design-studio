@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Bent Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Page-specific: hero banner */
+    .page-hero { padding: 16rem 4rem 6rem; }
+    .page-hero-title { font-family: var(--font-display); font-size: clamp(4rem,8vw,8rem); font-weight: 300; line-height: 1; }
+    .page-hero.cream { background: var(--cream); }
+    @media(max-width:900px){ .page-hero{padding:10rem 2rem 4rem;} }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Bent</span>
+      <span class="logo-sub">Design Studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero cream">
+    <p class="section-label">Reach Out</p>
+    <h1 class="page-hero-title">Let's Build<br><em>Together</em></h1>
+  </div>
+
+  <section class="contact">
+    <div class="contact-info reveal-left">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Let's Begin<br>Your Story.</h2>
+      <p class="body-text">Share your vision with us. We'll call you back to understand your project and explore how we can bring it to life — from concept to completion.</p>
+      <div class="contact-detail">
+        <div class="contact-item">
+          <div class="contact-item-label">Studio</div>
+          <div class="contact-item-value">Hyderabad, Telangana, India</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">Email</div>
+          <div class="contact-item-value">hello@bentdesignstudio.com</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">Phone</div>
+          <div class="contact-item-value">+91 98765 43210</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">Studio Hours</div>
+          <div class="contact-item-value">Mon – Sat, 10am – 7pm</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal-right">
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder=" " required />
+          <label for="name">Full Name</label>
+          <div class="form-line"></div>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder=" " required />
+          <label for="phone">Phone Number</label>
+          <div class="form-line"></div>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder=" " />
+          <label for="email">Email Address (optional)</label>
+          <div class="form-line"></div>
+        </div>
+        <div class="form-group">
+          <select id="project" name="project">
+            <option value="" disabled selected></option>
+            <option value="residential">Residential Architecture</option>
+            <option value="interior">Interior Design</option>
+            <option value="children">Children's Spaces</option>
+            <option value="senior">Senior Living Design</option>
+            <option value="full">Full Home (Architecture + Interiors)</option>
+          </select>
+          <span class="select-label">Project Type</span>
+          <div class="form-line"></div>
+        </div>
+        <div class="form-group">
+          <select id="budget" name="budget">
+            <option value="" disabled selected></option>
+            <option value="under25">Under ₹25 Lakhs</option>
+            <option value="25-75">₹25 – ₹75 Lakhs</option>
+            <option value="75-150">₹75 Lakhs – ₹1.5 Cr</option>
+            <option value="above150">Above ₹1.5 Cr</option>
+          </select>
+          <span class="select-label">Approximate Budget</span>
+          <div class="form-line"></div>
+        </div>
+        <div class="form-group">
+          <select id="calltime" name="calltime">
+            <option value="" disabled selected></option>
+            <option value="morning">Morning (10am – 1pm)</option>
+            <option value="afternoon">Afternoon (1pm – 4pm)</option>
+            <option value="evening">Evening (4pm – 7pm)</option>
+          </select>
+          <span class="select-label">Preferred Call Time</span>
+          <div class="form-line"></div>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder=" "></textarea>
+          <label for="message">Tell us about your project</label>
+          <div class="form-line"></div>
+        </div>
+        <button type="submit" class="submit-btn">
+          Request a Callback
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </form>
+      <div class="form-success" id="form-success">
+        <span class="form-success-icon">✦</span>
+        <h3>Thank you.</h3>
+        <p>We've received your details and will call you within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="map-wrap">
+    <div class="map-placeholder">
+      Bent Design Studio — Hyderabad
+      <small>Replace this with a Google Maps embed when ready</small>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-main">Bent</span><span class="logo-sub">Design Studio</span></div>
+        <p class="footer-tagline">Crafting homes that respect<br>how you live, age, and grow.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="about.html#services">Residential Architecture</a></li>
+          <li><a href="about.html#services">Interior Design</a></li>
+          <li><a href="about.html#services">Children's Spaces</a></li>
+          <li><a href="about.html#services">Senior Living</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Houzz</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Bent Design Studio. All rights reserved. · Hyderabad, India</p>
+      <div class="footer-socials"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Houzz</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+  <script>window.addEventListener('load', () => initAnimations());</script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Bent Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Page-specific: hero banner */
+    .page-hero { padding: 16rem 4rem 6rem; background: var(--cream); }
+    .page-hero-title { font-family: var(--font-display); font-size: clamp(4rem,8vw,8rem); font-weight: 300; line-height: 1; }
+    /* Page-specific: filter bar */
+    .filter-bar { padding: 3rem 4rem; display: flex; gap: 1rem; flex-wrap: wrap; border-bottom: 1px solid var(--light); }
+    .filter-btn { padding: .6rem 1.5rem; border: 1px solid var(--light); background: transparent; font-family: var(--font-body); font-size: .6rem; letter-spacing: .25em; text-transform: uppercase; color: var(--mid); transition: all .3s; }
+    .filter-btn:hover, .filter-btn.active { background: var(--black); color: var(--white); border-color: var(--black); }
+    @media(max-width:900px){ .page-hero{padding:10rem 2rem 4rem;} .filter-bar{padding:2rem;} .projects-grid{grid-template-columns:1fr; padding:3rem 2rem 6rem;} }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    .page-hero { padding: 16rem 4rem 6rem; background: var(--cream); }
+    .page-hero-title { font-family: var(--font-display); font-size: clamp(4rem,8vw,8rem); font-weight: 300; line-height: 1; }
+    .filter-bar { padding: 3rem 4rem; display: flex; gap: 1rem; flex-wrap: wrap; border-bottom: 1px solid var(--light); }
+    .filter-btn { padding: .6rem 1.5rem; border: 1px solid var(--light); background: transparent; font-family: var(--font-body); font-size: .6rem; letter-spacing: .25em; text-transform: uppercase; color: var(--mid); transition: all .3s; }
+    .filter-btn:hover, .filter-btn.active { background: var(--black); color: var(--white); border-color: var(--black); }
+    .section-label { font-size:.6rem; letter-spacing:.45em; text-transform:uppercase; color:var(--gold); margin-bottom:1.5rem; display:flex; align-items:center; gap:1rem; }
+    .section-label::before { content:''; display:block; width:30px; height:1px; background:var(--gold); }
+    @media(max-width:900px){ .page-hero{padding:10rem 2rem 4rem;} .filter-bar{padding:2rem;} }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Bent</span>
+      <span class="logo-sub">Design Studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <p class="section-label">Our Portfolio</p>
+    <h1 class="page-hero-title">All<br><em>Projects</em></h1>
+  </div>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="residential">Residential Architecture</button>
+    <button class="filter-btn" data-filter="interior">Interior Design</button>
+    <button class="filter-btn" data-filter="children">Children's Spaces</button>
+    <button class="filter-btn" data-filter="senior">Senior Living</button>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card reveal" data-cat="residential">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=80" alt="The Luma Residence" />
+        <span class="project-card-cat">Residential Architecture</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">The Luma Residence</div>
+        <div class="project-card-loc">Hyderabad · 2024</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="interior">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1615529179035-e760f6a2dcee?w=700&q=80" alt="Aura Penthouse" />
+        <span class="project-card-cat">Interior Design</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">Aura Penthouse</div>
+        <div class="project-card-loc">Hyderabad · 2024</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="residential">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=700&q=80" alt="Silhouette Villa" />
+        <span class="project-card-cat">Gated Villa Community</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">Silhouette Villa</div>
+        <div class="project-card-loc">Hyderabad · 2023</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="children">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?w=700&q=80" alt="The Meadow Rooms" />
+        <span class="project-card-cat">Children's Spaces</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">The Meadow Rooms</div>
+        <div class="project-card-loc">Hyderabad · 2023</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="senior">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700&q=80" alt="Serenity Residence" />
+        <span class="project-card-cat">Senior Living Design</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">Serenity Residence</div>
+        <div class="project-card-loc">Hyderabad · 2022</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="residential">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=700&q=80" alt="The Dune House" />
+        <span class="project-card-cat">Independent House</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">The Dune House</div>
+        <div class="project-card-loc">Hyderabad · 2022</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="interior">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=700&q=80" alt="The Calm Kitchen" />
+        <span class="project-card-cat">Interior Design</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">The Calm Kitchen</div>
+        <div class="project-card-loc">Hyderabad · 2021</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="children">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" alt="Studio Bloom" />
+        <span class="project-card-cat">Children's Learning Space</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">Studio Bloom</div>
+        <div class="project-card-loc">Hyderabad · 2021</div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="residential">
+      <div class="project-card-img">
+        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=700&q=80" alt="Meridian Apartments" />
+        <span class="project-card-cat">Stand-alone Apartments</span>
+      </div>
+      <div class="project-card-info">
+        <div class="project-card-title">Meridian Apartments</div>
+        <div class="project-card-loc">Hyderabad · 2020</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-main">Bent</span><span class="logo-sub">Design Studio</span></div>
+        <p class="footer-tagline">Crafting homes that respect<br>how you live, age, and grow.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="about.html#services">Residential Architecture</a></li>
+          <li><a href="about.html#services">Interior Design</a></li>
+          <li><a href="about.html#services">Children's Spaces</a></li>
+          <li><a href="about.html#services">Senior Living</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Houzz</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Bent Design Studio. All rights reserved. · Hyderabad, India</p>
+      <div class="footer-socials"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Houzz</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    window.addEventListener('load', () => initAnimations());
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.project-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(c => { c.style.display = (f === 'all' || c.dataset.cat === f) ? 'block' : 'none'; });
+      });
+    });
+  </script>
+</body>
+</html>

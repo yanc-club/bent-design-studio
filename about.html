@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Bent Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Page-specific: hero banner */
+    .page-hero { padding: 16rem 4rem 6rem; }
+    .page-hero-title { font-family: var(--font-display); font-size: clamp(4rem,8vw,8rem); font-weight: 300; line-height: 1; }
+    .page-hero.cream { background: var(--cream); }
+    @media(max-width:900px){ .page-hero{padding:10rem 2rem 4rem;} }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Bent</span>
+      <span class="logo-sub">Design Studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero cream">
+    <p class="section-label">Our Studio</p>
+    <h1 class="page-hero-title">About<br><em>Bent Design</em></h1>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="about-images reveal-left">
+      <span class="about-year">Est. 2012</span>
+      <img class="about-img-main"   src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80" alt="Bent Design Studio" />
+      <img class="about-img-accent" src="https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?w=400&q=80" alt="Design detail" />
+    </div>
+    <div class="reveal-right">
+      <p class="section-label">Who We Are</p>
+      <h2 class="section-title">Every home should<br>respect how you <em>live.</em></h2>
+      <p class="body-text">At BENT Design Studio, we believe every home should respect how people live, age, and grow. With over a decade of experience in residential architecture and interiors, we bring together functionality, creativity, and Vaastu principles with practical site realities to create spaces that feel balanced, purposeful, and deeply personal.</p>
+      <p class="body-text">We don't believe in one-size-fits-all solutions. Our specialised philosophy focuses on:</p>
+      <div class="specialism-list">
+        <div class="specialism-item">
+          <div class="specialism-dot"></div>
+          <div class="specialism-label"><strong>Children's spaces</strong> designed for growth and play</div>
+        </div>
+        <div class="specialism-item">
+          <div class="specialism-dot"></div>
+          <div class="specialism-label"><strong>Senior living designs</strong> that support comfort and independence</div>
+        </div>
+      </div>
+      <p class="body-text" style="margin-top:1.5rem;">From concept to execution, we deliver reliable results that honour culture, wellness, and your unique needs.</p>
+      <div class="about-callout">
+        <p>We see architecture and interiors as a continuous thread — not as separate disciplines.<br><br>
+        At Bent, we design spaces that are:<br>
+        Thoughtful in layout · Respectful of context and culture · Gentle to the environment · Resolved down to construction detail</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-inner">
+      <div class="reveal-left">
+        <p class="section-label">Our Design Philosophy</p>
+        <h2 class="section-title">Designing For<br><em>Every Phase of Life</em></h2>
+        <p class="philosophy-tagline">The Problem + Our Thought Process + The Design Outcome</p>
+        <p class="body-text">Life evolves. Homes should evolve with it.</p>
+        <p class="body-text">Different life stages bring different needs, and thoughtful design can make those transitions smoother, safer, and more meaningful.</p>
+        <p class="body-text">Every decision is guided by one question: <em>Will this improve the quality of life for the people using this space?</em></p>
+        <p class="body-text">Spaces that feel natural. Homes that function effortlessly. Designs that remain relevant for years. And environments that contribute positively to everyday living.</p>
+      </div>
+      <div class="philosophy-cards reveal-right">
+        <div class="philosophy-card">
+          <div class="philosophy-card-title">The Problem</div>
+          <div class="philosophy-card-text">Most homes are designed for a single moment in time — not for the life that unfolds within them. As families grow, as children develop, as parents age, spaces become obstacles rather than enablers. Design that doesn't consider the future fails the people living in it.</div>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-card-title">Our Thought Process</div>
+          <div class="philosophy-card-text">We ask questions that go beyond aesthetics. How will a child use this room in five years? How will a parent navigate this space comfortably as they age? What does natural light do to this room at 6pm? Every design decision is tested against real life — not just against a mood board.</div>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-card-title">The Design Outcome</div>
+          <div class="philosophy-card-text">Spaces that feel natural. Homes that function effortlessly. Designs that remain relevant for years and environments that contribute positively to everyday living — for every member of your family, at every stage of their life.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLAX STRIP -->
+  <div class="image-strip">
+    <img class="strip-bg" id="parallax-bg" src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1400&q=80" alt="Design philosophy" />
+    <div class="strip-overlay"></div>
+    <div class="strip-content reveal">
+      <p class="strip-quote">"Every space has a soul. We simply help it speak."</p>
+      <p class="strip-attr">— Bent Design Studio</p>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services-sticky reveal-left">
+      <p class="section-label">Services</p>
+      <h2 class="section-title">What We<br><em>Offer</em></h2>
+      <p class="body-text">We see architecture and interiors as a continuous thread — not as separate disciplines. Hover each service to learn more.</p>
+    </div>
+    <div class="service-list reveal-right">
+
+      <!-- Residential Architecture -->
+      <div class="service-item">
+        <div class="service-num">01</div>
+        <div class="service-content">
+          <div class="service-name">Residential Architecture</div>
+          <div class="service-sub">Gated Communities · Stand-alone Apartments · Independent Houses</div>
+          <div class="service-desc">Home designs that balance creativity, Vaastu, and site realities. From compact homes to luxury villas, we build spaces that work. From entire community layouts to individual homes, we deliver designs built for real life.</div>
+          <ul class="service-bullets">
+            <li>Gated villa communities</li>
+            <li>Stand-alone apartments</li>
+            <li>Independent houses</li>
+          </ul>
+        </div>
+        <div class="service-arrow">+</div>
+      </div>
+
+      <!-- Interior Design -->
+      <div class="service-item">
+        <div class="service-num">02</div>
+        <div class="service-content">
+          <div class="service-name">Interior Design</div>
+          <div class="service-sub">Full Home · Room by Room · Turnkey</div>
+          <div class="service-desc">Thoughtful interiors that enhance functionality and wellness. Every corner serves a purpose while celebrating your style. We curate materials, furniture, lighting, and art to create deeply personal living environments.</div>
+        </div>
+        <div class="service-arrow">+</div>
+      </div>
+
+      <!-- Children's Spaces -->
+      <div class="service-item">
+        <div class="service-num">03</div>
+        <div class="service-content">
+          <div class="service-name">Children's Spaces</div>
+          <div class="service-sub">Bedrooms · Study Areas · Play Zones</div>
+          <div class="service-desc">Children experience spaces differently than adults. We design environments that encourage independence, creativity, learning, exploration, and emotional well-being. Instead of simply creating kids' rooms, we create spaces that support growth and adapt as children evolve through different stages of life.</div>
+        </div>
+        <div class="service-arrow">+</div>
+      </div>
+
+      <!-- Senior Living -->
+      <div class="service-item">
+        <div class="service-num">04</div>
+        <div class="service-content">
+          <div class="service-name">Senior Living Design</div>
+          <div class="service-sub">Accessibility · Comfort · Independence</div>
+          <div class="service-desc">Comfort, dignity, safety, and ease become increasingly important with age. Our senior-focused design approach carefully considers accessibility, movement, lighting, ergonomics, and emotional comfort — while maintaining warmth and elegance. The goal is simple: to create homes that support independence and celebrate life at every age.</div>
+        </div>
+        <div class="service-arrow">+</div>
+      </div>
+
+      <!-- Reliable Execution -->
+      <div class="service-item">
+        <div class="service-num">05</div>
+        <div class="service-content">
+          <div class="service-name">Reliable Execution</div>
+          <div class="service-sub">Material Selection · Site Management · Handover</div>
+          <div class="service-desc">We don't just design — we deliver. From material selection to on-site management, your project gets experienced hands throughout. We coordinate with contractors, suppliers, and vendors so you don't have to, ensuring the final result matches the design intent.</div>
+        </div>
+        <div class="service-arrow">+</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us">
+    <p class="section-label">Why Clients Choose Us</p>
+    <h2 class="section-title">Thoughtful Design.<br><em>Reliable Execution.</em></h2>
+    <p class="why-us-tagline">Spaces Designed Around Life.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Years of Experience</div>
+        <div class="why-card-text">Over a decade in residential architecture and interiors, with a portfolio spanning compact homes to luxury villas across Hyderabad.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Vaastu-Aligned Design</div>
+        <div class="why-card-text">We integrate Vaastu principles naturally into every layout, respecting culture while delivering contemporary spaces that genuinely work.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Site-Ready Solutions</div>
+        <div class="why-card-text">We understand real constraints — plot shapes, local bylaws, material availability. Every design is buildable, not just beautiful on paper.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Space Wellness</div>
+        <div class="why-card-text">We focus on health and comfort in every decision — light quality, ventilation, material choices, and the emotional feel of a space.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Specialised Expertise</div>
+        <div class="why-card-text">Dedicated expertise in children's spaces and senior living design — areas requiring sensitivity, foresight, and specialised knowledge.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Reliable Execution</div>
+        <div class="why-card-text">We don't just design — we deliver. From material selection to on-site management, your project gets experienced hands throughout.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-main">Bent</span><span class="logo-sub">Design Studio</span></div>
+        <p class="footer-tagline">Crafting homes that respect<br>how you live, age, and grow.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="#services">Residential Architecture</a></li>
+          <li><a href="#services">Interior Design</a></li>
+          <li><a href="#services">Children's Spaces</a></li>
+          <li><a href="#services">Senior Living</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Houzz</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Bent Design Studio. All rights reserved. · Hyderabad, India</p>
+      <div class="footer-socials"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Houzz</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script>window.addEventListener('load', () => initAnimations());</script>
+</body>
+</html>

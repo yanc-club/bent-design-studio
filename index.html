@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bent Design Studio — Architecture & Interiors, Hyderabad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Bent</span>
+      <span class="logo-sub">Design Studio</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Every</span> <span class="word">Home</span></span>
+        <span class="line"><span class="word">Should</span> <span class="word">Respect</span></span>
+        <span class="line"><span class="word">How You</span> <span class="word">Live.</span></span>
+      </h1>
+      <p class="hero-desc">Residential architecture and interiors built around functionality, creativity, Vaastu principles, and the reality of how people live, age, and grow.</p>
+      <a href="projects.html" class="hero-cta">
+        <span class="hero-cta-line"></span>
+        View Our Work
+      </a>
+    </div>
+    <div class="hero-right" id="hero-right">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" alt="Bent Design Studio space" />
+      <div class="hero-number">01</div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Residential Architecture</span><span class="dot">·</span>
+      <span>Interior Design</span><span class="dot">·</span>
+      <span>Children's Spaces</span><span class="dot">·</span>
+      <span>Senior Living Design</span><span class="dot">·</span>
+      <span>Vaastu-Aligned</span><span class="dot">·</span>
+      <span>Concept to Completion</span><span class="dot">·</span>
+      <span>Residential Architecture</span><span class="dot">·</span>
+      <span>Interior Design</span><span class="dot">·</span>
+      <span>Children's Spaces</span><span class="dot">·</span>
+      <span>Senior Living Design</span><span class="dot">·</span>
+      <span>Vaastu-Aligned</span><span class="dot">·</span>
+      <span>Concept to Completion</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="about" id="about">
+    <div class="about-images reveal-left">
+      <span class="about-year">Est. 2012</span>
+      <img class="about-img-main"   src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80" alt="Bent Design Studio interior" />
+      <img class="about-img-accent" src="https://images.unsplash.com/photo-1618221469555-7f3ad97540d6?w=400&q=80" alt="Design detail" />
+    </div>
+    <div class="reveal-right">
+      <p class="section-label">About Us</p>
+      <h2 class="section-title">Design is our<br><em>language.</em></h2>
+      <p class="body-text">At BENT Design Studio, we believe every home should respect how people live, age, and grow. With over a decade of experience in residential architecture and interiors, we bring together functionality, creativity, and Vaastu principles with practical site realities to create spaces that feel balanced, purposeful, and deeply personal.</p>
+      <p class="body-text">We don't believe in one-size-fits-all solutions. Our specialised philosophy focuses on:</p>
+      <div class="specialism-list">
+        <div class="specialism-item">
+          <div class="specialism-dot"></div>
+          <div class="specialism-label"><strong>Children's spaces</strong> designed for growth and play</div>
+        </div>
+        <div class="specialism-item">
+          <div class="specialism-dot"></div>
+          <div class="specialism-label"><strong>Senior living designs</strong> that support comfort and independence</div>
+        </div>
+      </div>
+      <div class="about-callout">
+        <p>We see architecture and interiors as a continuous thread — not as separate disciplines. At Bent, we design spaces that are thoughtful in layout, respectful of context and culture, gentle to the environment, and resolved down to construction detail.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS CAROUSEL -->
+  <section class="projects" id="projects">
+    <div class="projects-header reveal">
+      <div>
+        <p class="section-label">Selected Work</p>
+        <h2 class="section-title">Our Projects</h2>
+      </div>
+      <a href="projects.html" class="view-all">View All <span></span></a>
+    </div>
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="carousel-track">
+        <div class="carousel-item">
+          <div class="carousel-item-inner">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="The Luma Residence" />
+            <div class="carousel-number">01</div>
+            <div class="carousel-overlay">
+              <div class="carousel-cat">Residential Architecture</div>
+              <div class="carousel-title">The Luma Residence</div>
+              <div class="carousel-loc">Hyderabad, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item-inner">
+            <img src="https://images.unsplash.com/photo-1615529179035-e760f6a2dcee?w=600&q=80" alt="Aura Penthouse" />
+            <div class="carousel-number">02</div>
+            <div class="carousel-overlay">
+              <div class="carousel-cat">Interior Design</div>
+              <div class="carousel-title">Aura Penthouse</div>
+              <div class="carousel-loc">Hyderabad, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item-inner">
+            <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80" alt="Silhouette Villa" />
+            <div class="carousel-number">03</div>
+            <div class="carousel-overlay">
+              <div class="carousel-cat">Gated Villa Community</div>
+              <div class="carousel-title">Silhouette Villa</div>
+              <div class="carousel-loc">Hyderabad, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item-inner">
+            <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?w=600&q=80" alt="Children's Spaces" />
+            <div class="carousel-number">04</div>
+            <div class="carousel-overlay">
+              <div class="carousel-cat">Children's Spaces</div>
+              <div class="carousel-title">The Meadow Rooms</div>
+              <div class="carousel-loc">Hyderabad, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item-inner">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Senior Living" />
+            <div class="carousel-number">05</div>
+            <div class="carousel-overlay">
+              <div class="carousel-cat">Senior Living Design</div>
+              <div class="carousel-title">Serenity Residence</div>
+              <div class="carousel-loc">Hyderabad, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item-inner">
+            <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&q=80" alt="Independent House" />
+            <div class="carousel-number">06</div>
+            <div class="carousel-overlay">
+              <div class="carousel-cat">Independent House</div>
+              <div class="carousel-title">The Dune House</div>
+              <div class="carousel-loc">Hyderabad, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prev-btn">&#8592;</button>
+      <div class="carousel-dots" id="carousel-dots"></div>
+      <button class="carousel-btn" id="next-btn">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY PREVIEW -->
+  <section class="philosophy">
+    <div class="philosophy-inner">
+      <div class="reveal-left">
+        <p class="section-label">Our Design Philosophy</p>
+        <h2 class="section-title">Designing For<br><em>Every Phase of Life</em></h2>
+        <p class="body-text">Life evolves. Homes should evolve with it. Different life stages bring different needs, and thoughtful design can make those transitions smoother, safer, and more meaningful.</p>
+        <p class="body-text">Every decision is guided by one question: <em>Will this improve the quality of life for the people using this space?</em></p>
+        <a href="about.html" class="hero-cta" style="opacity:1; margin-top:2rem;">
+          <span class="hero-cta-line"></span>
+          Our Full Story
+        </a>
+      </div>
+      <div class="philosophy-cards reveal-right">
+        <div class="philosophy-card">
+          <div class="philosophy-card-title">The Problem</div>
+          <div class="philosophy-card-text">Most homes are designed for a single moment in time — not for the life that unfolds within them. Spaces become obstacles rather than enablers as families grow and change.</div>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-card-title">Our Thought Process</div>
+          <div class="philosophy-card-text">We ask questions that go beyond aesthetics — how will a child use this room in five years? How will a parent navigate this space as they age? What does comfort really look like here?</div>
+        </div>
+        <div class="philosophy-card">
+          <div class="philosophy-card-title">The Design Outcome</div>
+          <div class="philosophy-card-text">Spaces that feel natural. Homes that function effortlessly. Designs that remain relevant for years and environments that contribute positively to everyday living.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLAX STRIP -->
+  <div class="image-strip">
+    <img class="strip-bg" id="parallax-bg" src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1400&q=80" alt="Bent Design Studio philosophy" />
+    <div class="strip-overlay"></div>
+    <div class="strip-content reveal">
+      <p class="strip-quote">"We see architecture and interiors as a continuous thread — not as separate disciplines."</p>
+      <p class="strip-attr">— Bent Design Studio</p>
+    </div>
+  </div>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us">
+    <p class="section-label">Why Clients Choose Us</p>
+    <h2 class="section-title">Thoughtful Design.<br><em>Reliable Execution.</em></h2>
+    <p class="why-us-tagline">Spaces Designed Around Life.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Years of Experience</div>
+        <div class="why-card-text">Over a decade in residential architecture and interiors, with a portfolio that spans compact homes to luxury villas across Hyderabad.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Vaastu-Aligned Design</div>
+        <div class="why-card-text">We integrate Vaastu principles naturally into every layout, respecting culture while delivering contemporary spaces that genuinely work.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Site-Ready Solutions</div>
+        <div class="why-card-text">We understand real constraints — plot shapes, local bylaws, material availability. Every design is buildable, not just beautiful on paper.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Space Wellness</div>
+        <div class="why-card-text">We focus on health and comfort in every decision — light quality, ventilation, material choices, and the emotional feel of a space.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Specialised Expertise</div>
+        <div class="why-card-text">Dedicated expertise in children's spaces and senior living design — areas that require sensitivity, foresight, and specialised knowledge.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-card-icon">◈</div>
+        <div class="why-card-title">Reliable Execution</div>
+        <div class="why-card-text">We don't just design — we deliver. From material selection to on-site management, your project gets experienced hands at every stage.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <p class="section-label">Client Words</p>
+    <h2 class="section-title">What They Say</h2>
+    <div class="testi-slider">
+      <div class="testi-slide active">
+        <span class="testi-quote-mark">"</span>
+        <p class="testi-text">Bent Design Studio transformed our home into something we couldn't have imagined. They understood our family's needs — and how they'd change as our children grow.</p>
+        <p class="testi-author">Priya Mehta — Hyderabad</p>
+      </div>
+      <div class="testi-slide">
+        <span class="testi-quote-mark">"</span>
+        <p class="testi-text">They designed our mother's living space with such sensitivity — the accessibility, the light, the warmth. It feels like home, not a concession.</p>
+        <p class="testi-author">Rahul Sinha — Hyderabad</p>
+      </div>
+      <div class="testi-slide">
+        <span class="testi-quote-mark">"</span>
+        <p class="testi-text">The Vaastu integration was seamless — we never felt like we were compromising on design. The result is a home that feels right in every way.</p>
+        <p class="testi-author">Aanya Kapoor — Hyderabad</p>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <div class="testi-dot active"></div>
+      <div class="testi-dot"></div>
+      <div class="testi-dot"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-main">Bent</span><span class="logo-sub">Design Studio</span></div>
+        <p class="footer-tagline">Crafting homes that respect<br>how you live, age, and grow.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="about.html#services">Residential Architecture</a></li>
+          <li><a href="about.html#services">Interior Design</a></li>
+          <li><a href="about.html#services">Children's Spaces</a></li>
+          <li><a href="about.html#services">Senior Living</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Connect</p>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Houzz</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Bent Design Studio. All rights reserved. · Hyderabad, India</p>
+      <div class="footer-socials"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Houzz</a></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/form.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('hero-right').classList.add('loaded');
+      const words = document.querySelectorAll('.hero-title .word');
+      words.forEach((w, i) => {
+        setTimeout(() => {
+          w.style.transition = 'transform 1s cubic-bezier(0.16,1,0.3,1)';
+          w.style.transform  = 'translateY(0)';
+        }, 200 + i * 100);
+      });
+      setTimeout(() => {
+        ['.hero-eyebrow', '.hero-desc', '.hero-cta', '.hero-scroll'].forEach(sel => {
+          const el = document.querySelector(sel);
+          if (el) { el.style.transition = 'opacity 0.8s'; el.style.opacity = '1'; }
+        });
+      }, 800);
+      initAnimations();
+    });
+  </script>
+</body>
+</html>
